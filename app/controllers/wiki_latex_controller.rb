@@ -42,8 +42,8 @@ private
     temp_latex.flush
     temp_latex.close
 
-    fork_exec(dir, "/usr/bin/latex --interaction=nonstopmode "+@name+".tex 2> /dev/null > /dev/null")
-    fork_exec(dir, "/usr/bin/dvipng "+@name+".dvi -o "+@name+".png")
+    fork_exec(dir, "/usr/texbin/latex --interaction=nonstopmode "+@name+".tex 2> /dev/null > /dev/null")
+    fork_exec(dir, "/usr/texbin/dvipng "+@name+".dvi -o "+@name+".png")
     ['tex','dvi','log','aux','ps'].each do |ext|
 	if File.exists?(basefilename+"."+ext)
     	    File.unlink(basefilename+"."+ext)

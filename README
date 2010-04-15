@@ -3,6 +3,15 @@ image from latex code.
  
 Copyright (C) 2009 Nils Israel <info@nils-israel.net>
 Based on wiki_graphviz_plugin by tckz<at.tckz@gmail.com>
+
+=====
+
+Forked by Trond Lossius 2010 to alter a few settings required to make it
+work on OSX and OSX Server with Latex installed from MacTeX:
+
+http://www.tug.org/mactex/2009/
+
+=====
  
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
